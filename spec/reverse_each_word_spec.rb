@@ -16,3 +16,7 @@ describe '#reverse_each_word' do
     reverse_each_word("Verifying that collect is being called.")
   end
 end
+
+def reverse_each_word(sentence)
+  sentence.split.collect {|word| word.reverse}.join(" ")
+end
